@@ -6,14 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#121212" />
     <meta name="publisher" content="Paiz" />
+    <meta
+      name="description"
+      content="A personal website that belongs to Faiz Dzaki explains about his skills of programming"
+    />
     <meta property="og:site_name" content="paiziuu" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://paiziuu.site/" />
     <meta property="og:title" content="Paiz - Main Page" />
-    <meta property="og:description" content="A website made with ❤️ by Paiz." />
+    <meta
+      property="og:description"
+      content="A personal website that belongs to Faiz Dzaki explains about his skills of programming"
+    />
     <meta property="twitter:url" content="https://paiziuu.site/" />
     <meta property="twitter:title" content="Paiz - Main Page" />
-    <meta property="twitter:description" content="A website made with ❤️ by Paiz." />
+    <meta
+      property="twitter:description"
+      content="A personal website that belongs to Faiz Dzaki explains about his skills of programming"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com/" crossorigin />
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/" />
@@ -26,13 +36,13 @@
     <header>
       <h1><a href="#">Paiz</a></h1>
 
-      <a href="javascript:void(0)" id="hamburg" onclick="openNavbar()">
+      <a href="#" id="hamburg" onclick="openNavbar()">
         <i class="fa-solid fa-bars"></i>
       </a>
 
       <ul id="nav-head-id">
         <div id="cancel">
-          <a href="javascript:void(0)" onclick="closeNavbar()">
+          <a href="#" onclick="closeNavbar()">
             <i class="fa-solid fa-xmark"></i>
           </a>
         </div>
@@ -48,8 +58,9 @@
         <div class="callsign">
           <img
             src="assets/images/profile.jpg"
-            alt="Paiz's Discord profile"
+            alt="Discord profile"
             style="width: 32px; height: 32px; border-radius: 100%"
+            id="discordProfilePicture"
           />
 
           <a
@@ -57,8 +68,22 @@
             style="color: inherit; text-decoration: none"
             target="_blank"
           >
-            <p>@paaizz</p>
+            <p id="discordUsername"></p>
           </a>
+          <div class="status-container">
+            <p>Is currently</p>
+            <div class="discord-status">
+              <img
+                src="./assets/discord_status/offline.png"
+                alt="DISCORD_STATUS_IMAGE"
+                style="margin-left: 5px; height: 20px; width: 20px"
+                id="imageStatus"
+              />
+              <i>
+                <div id="discordStatus" style="margin-left: 5px"></div>
+              </i>
+            </div>
+          </div>
         </div>
 
         <div class="main-header">
@@ -106,9 +131,11 @@
               </div>
             </div>
           </a>
+        </div>
+        <div style="margin: 10px 0">
           <a
             href="https://github.com/PaizTralala"
-            style="color: inherit; text-decoration: none; cursor: pointer"
+            style="color: inherit; cursor: pointer; padding: 10px 0"
             target="_blank"
             >and more...</a
           >
