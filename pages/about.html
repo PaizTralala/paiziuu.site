@@ -21,26 +21,33 @@
     <link rel="stylesheet" href="../css/about.css" />
     <link rel="icon" href="../assets/images/sage_rounded.png" />
 
-    <title>Paiz - Main Page</title>
+    <title>Paiz - About Page</title>
   </head>
   <body>
-    <header>
-      <h1><a href="#">Paiz</a></h1>
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
 
-      <a href="javascript:void(0)" id="hamburg" onclick="openNavbar()">
+    <header>
+      <h1><a href="../index.html">Paiz</a></h1>
+
+      <a href="#" id="hamburg" onclick="openNavbar()">
         <i class="fa-solid fa-bars"></i>
       </a>
 
       <ul id="nav-head-id">
         <div id="cancel">
-          <a href="javascript:void(0)" onclick="closeNavbar()">
+          <a href="#" onclick="closeNavbar()">
             <i class="fa-solid fa-xmark"></i>
           </a>
         </div>
 
-        <li><a href="../pages/about.html">About</a></li>
-        <li><a href="../pages/project.html">Projects</a></li>
-        <li><a href="../pages/contact.html">Contact</a></li>
+        <div class="pages" style="display: flex">
+          <li onclick="loaderAnimate(this)" id="aboutPage">About</li>
+          <li onclick="loaderAnimate(this)" id="projectPage">Projects</li>
+          <li onclick="loaderAnimate(this)" id="contactPage">Contact</li>
+        </div>
       </ul>
     </header>
 

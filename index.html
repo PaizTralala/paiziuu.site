@@ -33,6 +33,11 @@
     <title>Paiz - Main Page</title>
   </head>
   <body>
+    <div class="loader">
+      <div></div>
+      <div></div>
+    </div>
+
     <header>
       <h1><a href="#">Paiz</a></h1>
 
@@ -47,9 +52,11 @@
           </a>
         </div>
 
-        <li><a href="./pages/about.html">About</a></li>
-        <li><a href="./pages/project.html">Projects</a></li>
-        <li><a href="./pages/contact.html">Contact</a></li>
+        <div class="pages" style="display: flex">
+          <li onclick="loaderAnimate(this)" id="aboutPage">About</li>
+          <li onclick="loaderAnimate(this)" id="projectPage">Projects</li>
+          <li onclick="loaderAnimate(this)" id="contactPage">Contact</li>
+        </div>
       </ul>
     </header>
 
